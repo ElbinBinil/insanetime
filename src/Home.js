@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Input, Button, IconButton } from '@material-ui/core';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import "./Home.css"
 
 class Home extends Component {
@@ -26,15 +25,11 @@ class Home extends Component {
 	render() {
 		return (
 			<div className="container2">
-				<div style={{fontSize: "14px", background: "white", width: "10%", textAlign: "center", margin: "auto", marginBottom: "10px"}}>
-					Source code: 
-					<IconButton style={{color: "black"}} onClick={() => window.location.href="https://github.com/0x5eba/Video-Meeting"}>
-						<GitHubIcon />
-					</IconButton>
-				</div>
+
 				
 				<div>
-					<h1 style={{ fontSize: "45px" }}>Video Meeting</h1>
+					<img src="https://img.icons8.com/fluent/100/000000/video-conference.png"/>
+					<h1 style={{ fontSize: "45px" }}>Insane Time</h1>
 					<p style={{ fontWeight: "200" }}>Video conference website that lets you stay in touch with all your friends.</p>
 				</div>
 
@@ -42,7 +37,8 @@ class Home extends Component {
 					background: "white", width: "30%", height: "auto", padding: "20px", minWidth: "400px",
 					textAlign: "center", margin: "auto", marginTop: "100px"
 				}}>
-					<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>Start or join a meeting</p>
+					<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>To join a meeting enter code</p>
+					<p style={{ margin: 0, fontWeight: "bold", paddingRight: "50px" }}>To start a meeting jus press go</p>
 					<Input placeholder="URL" onChange={e => this.handleChange(e)} />
 					<Button variant="contained" color="primary" onClick={this.join} style={{ margin: "20px" }}>Go</Button>
 				</div>
